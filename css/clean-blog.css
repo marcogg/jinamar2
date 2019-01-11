@@ -16,7 +16,7 @@ p {
 }
 
 p a {
-  text-decoration: underline;
+  text-decoration:;
 }
 
 h1,
@@ -37,6 +37,7 @@ a {
 
 a:focus, a:hover {
   color: #0000ff;
+  text-decoration: none !important;
 }
 
 blockquote {
@@ -337,7 +338,7 @@ header.masthead .post-heading .meta a {
   background: none;
   -webkit-box-shadow: none !important;
   box-shadow: none !important;
-  font-family: 'Lora', 'Times New Roman', serif;
+  font-family: 'Open Sans', 'Helvetica Neue', Helvetica, Arial, sans-serif;;
 }
 
 .floating-label-form-group input::-webkit-input-placeholder,

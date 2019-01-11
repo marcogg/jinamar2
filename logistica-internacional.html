@@ -8,7 +8,7 @@
     <meta name="description" content="">
     <meta name="author" content="">
 
-    <title>JINAMAR | Quienes somos</title>
+    <title>JINAMAR | Proveedores de buques</title>
 
     <!-- Bootstrap core CSS -->
     <link href="vendor/bootstrap/css/bootstrap.min.css" rel="stylesheet">
@@ -26,8 +26,8 @@
 
   <body>
 
-    <!-- Navigation -->
-        <nav class="navbar navbar-expand-lg navbar-light fixed-top" id="mainNav">
+           <!-- Navigation -->
+    <nav class="navbar navbar-expand-lg navbar-light fixed-top" id="mainNav">
       <div class="container">
         <a class="navbar-brand" href="index.html"><img src="img/logo.png"></a>
         <button class="navbar-toggler navbar-toggler-right" type="button" data-toggle="collapse" data-target="#navbarResponsive" aria-controls="navbarResponsive" aria-expanded="false" aria-label="Toggle navigation">
@@ -40,13 +40,24 @@
               <a class="nav-link" href="index.html">Inicio</a>
             </li> 
             <li class="nav-item">
-              <a class="nav-link" href="about.html">Quienes Somos</a>
+              <a class="nav-link" href="quienes-somos.html">Quienes Somos</a>
             </li>
-            <li class="nav-item">
-              <a class="nav-link" href="post.html">Servicios</a>
+            <li class="nav-item dropdown" style="cursor: pointer;">
+                <a class="nav-link dropdown-toggle" id="servicios" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">Servicios</a>
+                <ul class="dropdown-menu" aria-labelledby="dropdown1">
+                    <li class="dropdown-item"><a href="proveedores-buques.html">Proveedores de buques</a></li>
+                    <li class="dropdown-item"> <a href="agentes-navieros.html">Agentes Navieros</a></li>
+                    <li class="dropdown-item"> <a href="logistica-internacional.html">Logística Internacional</a></li>
+                </ul>
             </li>
+              <!--<a class="nav-link" href="">Servicios</a>
+              <div class="dropdown-menu" aria-labelledby="dropdownMenu2">
+                <button class="dropdown-item" type="button">Proveedores de buques</button>
+                <button class="dropdown-item" type="button">Agentes navieros</button>
+                <button class="dropdown-item" type="button">Logística Internacional</button>
+            </div>-->
             <li class="nav-item">
-              <a class="nav-link" href="contact.html">Contacto</a>
+              <a class="nav-link" href="contacto.html">Contacto</a>
             </li>
           </ul>
         </div>
@@ -54,37 +65,26 @@
     </nav>
 
     <!-- Page Header -->
-    <header class="masthead" style="background-image: url('img/jinamar-nosotros.jpg'); background-attachment: fixed;">
+    <header class="masthead" style="background-image: url('img/jinamar-logistica-internacional.jpg'); background-attachment: fixed;">
       <div class="overlay"></div>
       <div class="container">
         <div class="row">
           <div class="col-lg-8 col-md-10 mx-auto">
             <div class="page-heading">
-              <h1>QUIENES SOMOS</h1>
-              <span class="subheading">¡SIEMPRE ENCONTRAMOS LA MEJOR FORMA DE HACERLO!</span>
+            <div style="background-color: rgba(17,79,113,.5); padding: 5%; border-radius:10%;">
+              <h1>LOGÍSTICA INTERNACIONAL</h1>
+              <span class="subheading">Nos dedicamos a brindar soluciones logísticas de acuerdo con las necesidades expresadas por nuestros clientes.  Garantizamos un servicio seguro y de alta calidad al poner especial atención en el empaque y embalaje para proteger tu mercancía y facilitar la manipulación.</span>
               <hr>
-              <p class="text-left mt-4">Jinamar es una Agencia Naviera General proveedora de servicios portuarios y de transporte en la república Mexicana. Contamos con la experiencia de más de 20 años en el medio que nos han permitido resaltar con las autoridades locales y tener una cartera de clientes que nos prefieren por nuestra calidad y servicio.
-                <br>Tenemos experiencia manejando todo tipo de buques y cargas, además nuestra integridad nos exige velar siempre por los intereses del cliente, a través de personal calificado y con experiencia en el área.
-                <br>Ofrecemos un servicio integral para que no tengas que preocuparte por la logística de tu mercancía</p>
-                <h5>NOS DISTINGUIMOS POR</h5>
-                <div class="row mt-5">
-                  <div class="col-lg-3 col-md-3 col-sm-6 col-6">
-                    <img src="img/atencion-jinamar.png">
-                    <h6>Atención Personalizada</h6>
-                  </div>
-                  <div class="col-lg-3 col-md-3 col-sm-6 col-6">
-                    <img src="img/servicio-jinamar.png">
-                    <h6>Comunicación efectiva & Servicio 24/7</h6>
-                  </div>
-                  <div class="col-lg-3 col-md-3 col-sm-6 col-6">
-                    <img src="img/soluciones-jinamar.png">
-                    <h6>Buscar soluciones a tus necesidades.</h6>
-                  </div>
-                  <div class="col-lg-3 col-md-3 col-sm-6 col-6">
-                    <img src="img/reconocimiento-jinamar.png">
-                    <h6>Alta reconocimiento con autoridades de cada Puerto.</h6>
-                  </div>
-                </div>
+              <ul class="text-left">
+                <li><img src="img/check.png" width="30">Transporte Maritimo, Aereo Terrestre de todo tipo de mercancías.</li>
+                <li><img src="img/check.png" width="30">Información clara y precisa durante todo el embarque.</li>
+                <li><img src="img/check.png" width="30">Contenedores Puerta a Puerta o donde prefieras.</li>
+                <li><img src="img/check.png" width="30">Cobertura Global, Cualquier Origen & Cualquier Destino.</li>
+                <li><img src="img/check.png" width="30">Carga consolidada.</li>
+                <li><img src="img/check.png" width="30">Podemos asegurar tu mercancía nacional e internacionalmente.</li>
+                <li><img src="img/check.png" width="30">Almacenamiento.</li>              
+              </ul>
+            </div>
             </div>
           </div>
         </div>
