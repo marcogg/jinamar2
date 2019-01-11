@@ -62,7 +62,7 @@
 	background-size:cover;
 	background-repeat: no-repeat;
 	background-position: center;
-	height: auto;
+	min-height: 500px;
 }
 
 .nosotros{
