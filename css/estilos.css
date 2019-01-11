@@ -1,0 +1,72 @@
+.slider1{
+	background-image: url(../img/slider1.jpg);
+	width: 100%;
+	background-size:cover;
+	background-attachment: fixed;
+	background-repeat: no-repeat;
+	background-position: center;
+	height: 70vh;
+
+}
+.slider2{
+	background-image: url(../img/slider2.jpg);
+	width: 100%;
+	background-size:cover;
+	background-attachment: fixed;
+	background-repeat: no-repeat;
+	background-position: center;
+	height: 70vh;
+
+}
+.slider3{
+	background-image: url(../img/slider3.jpg);
+	width: 100%;
+	background-size:cover;
+	background-attachment: fixed;
+	background-repeat: no-repeat;
+	background-position: center;
+	height: 70vh;
+
+}
+.slider4{
+	background-image: url(../img/slider4.jpg);
+	width: 100%;
+	background-size:cover;
+	background-attachment: fixed;
+	background-repeat: no-repeat;
+	background-position: center;
+	height: 70vh;
+
+}
+.slider5{
+	background-image: url(../img/slider5.jpg);
+	width: 100%;
+	background-size:cover;
+	background-attachment: fixed;
+	background-repeat: no-repeat;
+	background-position: center;
+	height: 70vh;
+
+}
+
+
+.titulo-slider{
+	background-color: rgba(93,122,158, 0.5);
+	color: white;
+	padding: 5%;
+}
+
+.barco{
+	background-image: url(../img/shipping-company.jpg);
+	width: 100%;
+	background-size:cover;
+	background-repeat: no-repeat;
+	background-position: center;
+	height: auto;
+}
+
+.nosotros{
+	background-color: rgba(93,122,158, 0.5);
+	padding:1%;
+	border-radius: 10%
+}
