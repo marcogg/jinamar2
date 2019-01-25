@@ -119,21 +119,21 @@ img::-moz-selection {
 @media only screen and (min-width: 992px) {
   #mainNav {
     border-bottom: 1px solid transparent;
-    background: transparent;
+    background: rgba(255,255,255);
   }
   #mainNav .navbar-brand {
     padding: 10px 20px;
-    color: #fff;
+    color: #111a76;
   }
   #mainNav .navbar-brand:focus, #mainNav .navbar-brand:hover {
-    color: rgba(255, 255, 255, 0.8);
+    color: rgba(17, 26, 105, 0.5);
   }
   #mainNav .navbar-nav > li.nav-item > a {
     padding: 10px 20px;
-    color: #fff;
+    color: rgba(17, 26, 105, 0.8);
   }
   #mainNav .navbar-nav > li.nav-item > a:focus, #mainNav .navbar-nav > li.nav-item > a:hover {
-    color: rgba(255, 255, 255, 0.8);
+    color: rgba(17, 26, 105, 0.8);
   }
 }
 
@@ -149,7 +149,7 @@ img::-moz-selection {
   #mainNav.is-fixed {
     /* when the user scrolls down, we hide the header right above the viewport */
     position: fixed;
-    top: -67px;
+    top: -135px;
     -webkit-transition: -webkit-transform 0.2s;
     transition: -webkit-transform 0.2s;
     transition: transform 0.2s;
