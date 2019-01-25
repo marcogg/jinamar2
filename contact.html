@@ -89,7 +89,59 @@
           <!-- Contact Form - Enter your email address on line 19 of the mail/contact_me.php file to make this form work. -->
           <!-- WARNING: Some web hosts do not allow emails to be sent through forms to common mail hosts like Gmail or Yahoo. It's recommended that you use a private domain email address! -->
           <!-- To use the contact form, your site must be on a live web host with PHP! The form will not work locally! -->
-          <form name="sentMessage" id="contactForm" novalidate action="mail/contact_me.php">
+          <form name="contactform" method="post" action="send_form_email.php">
+      <table width="450px">
+        <tr>
+          <td valign="top">
+            <label for="first_name">First Name*</label>
+          </td>
+          <td valign="top">
+            <input  type="text" name="first_name" maxlength="50" size="20">
+          </td>
+        </tr>
+        <tr>
+          <td valign="top"">
+            <label for="last_name">Last Name*</label>
+          </td>
+          <td valign="top">
+            <input  type="text" name="last_name" maxlength="50" size="20">
+          </td>
+        </tr>
+        <tr>
+          <td valign="top">
+            <label for="email">Email*</label>
+          </td>
+          <td valign="top">
+            <input  type="text" name="email" maxlength="80" size="20">
+          </td>
+        </tr>
+        <tr>
+          <td valign="top">
+            <label for="telephone">Phone</label>
+          </td>
+          <td valign="top">
+            <input  type="text" name="telephone" maxlength="30" size="20">
+          </td>
+        </tr>
+        <tr>
+          <td valign="top">
+            <label for="comments">Comments*</label>
+          </td>
+          <td valign="top">
+            <textarea  name="comments" maxlength="1000" cols="20" rows="6"></textarea>
+          </td>
+        </tr>
+        <tr>
+          <td colspan="2" style="text-align:center">
+            <input type="submit" value="Enviar">
+          </td>
+        </tr>
+
+      </table>
+      <div class="g-recaptcha" data-sitekey="6LdH7XEUAAAAAP4xDZ8ySFl3bO1RLloCfSwIrBvx"></div>
+    </form>
+    <p><small>*Required data</small></p>
+          <!--<form name="sentMessage" id="contactForm" novalidate action="mail/contact_me.php">
             <div class="control-group">
               <div class="form-group floating-label-form-group controls">
                 <label>Name</label>
@@ -123,7 +175,7 @@
             <div class="form-group">
               <button type="submit" class="btn btn-primary btn-block" id="sendMessageButton">Send</button>
             </div>
-          </form>
+          </form>-->
         </div>
         <div class="col-lg-6 col-md-6 col-sm-12 col-12">
           <h5>Core Headhunter<br></h5>
