@@ -68,124 +68,80 @@
     </nav>
 
     <!-- Page Header -->
-    <header class="masthead" style="background-image: url('img/comercio_exterior-mexico-ultima2.jpg'); height: 100vh; background-position: center top; background-size: cover;">
+    <header class="masthead" style="background-image: url('img/comercio_exterior-mexico-ultima2.jpg'); height:100%; background-position: center top; background-size: cover;">
       <div class="overlay"></div>
-      <div class="container">
-        <div class="row">
-          <div class="col-lg-8 col-md-10 mx-auto">
-            <div class="page-heading">
+      <div class="container" style="background-color: rgba(0,27,92,0.5);">
+        <div class="row page-heading">
+          <div class="col-lg-6 col-md-6 col-sm-12-col-12">
+            <div class="">
               <h1>Contacto</h1>
-              <span class="subheading">Si necesita más información llene el siguiente formulario:</span>
+              <span class="subheading">Si necesita más información, llene el siguiente fomrulario</span>
+              <br>
+              <form name="contactform" method="post" action="enviar_mail.php">
+                <table style="width: 100%;">
+                  <tr>
+                    <td valign="top">
+                      <label for="first_name">Nombre completo*</label>
+                    </td>
+                    <td valign="top">
+                      <input  type="text" name="first_name" maxlength="50" size="20">
+                    </td>
+                  </tr>
+                  <tr>
+                    <td valign="top"">
+                      <label for="last_name">Ciudad*</label>
+                    </td>
+                    <td valign="top">
+                      <input  type="text" name="last_name" maxlength="50" size="20">
+                    </td>
+                  </tr>
+                  <tr>
+                    <td valign="top">
+                      <label for="email">Email*</label>
+                    </td>
+                    <td valign="top">
+                      <input  type="text" name="email" maxlength="80" size="20">
+                    </td>
+                  </tr>
+                  <tr>
+                    <td valign="top">
+                      <label for="telephone">Teléfono</label>
+                    </td>
+                    <td valign="top">
+                      <input  type="text" name="telephone" maxlength="30" size="20">
+                    </td>
+                  </tr>
+                  <tr>
+                    <td valign="top">
+                      <label for="comments">Comentarios*</label>
+                    </td>
+                    <td valign="top">
+                      <textarea  name="comments" maxlength="1000" cols="20" rows="6"></textarea>
+                    </td>
+                  </tr>
+                  <tr>
+                    <td colspan="2" style="text-align:center">
+                      <input type="submit" value="Enviar">
+                    </td>
+                  </tr>
+                </table>
+                <div class="g-recaptcha" data-sitekey="6LdH7XEUAAAAAP4xDZ8ySFl3bO1RLloCfSwIrBvx"></div>
+              </form>
+              <p><small>*Datos requeridos</small></p>
             </div>
+          </div>
+          <div class="col-lg-6 col-md-6 col-sm-12 col-12 text-white">
+            <img src="img/mapapro_logos22-u16120.png" class="img-fluid">
+            <h5>Matriz<br></h5>
+            <p>Heroica Veracruz # 35 1<br>
+              Col. Centro CP. 92800<br>
+            Tuxpan, Veracruz</p>
           </div>
         </div>
       </div>
     </header>
 
-    <!-- Main Content -->
-    <div class="container">
-      <div class="row">
-        <div class="col-lg-6 col-md-6 col-sm-12 col-12 mx-auto">
-          <!-- Contact Form - Enter your email address on line 19 of the mail/contact_me.php file to make this form work. -->
-          <!-- WARNING: Some web hosts do not allow emails to be sent through forms to common mail hosts like Gmail or Yahoo. It's recommended that you use a private domain email address! -->
-          <!-- To use the contact form, your site must be on a live web host with PHP! The form will not work locally! -->
-                  <form name="contactform" method="post" action="send_form_email.php">
-      <table width="450px">
-        <tr>
-          <td valign="top">
-            <label for="first_name">Nombre*</label>
-          </td>
-          <td valign="top">
-            <input  type="text" name="first_name" maxlength="50" size="20">
-          </td>
-        </tr>
-        <tr>
-          <td valign="top"">
-            <label for="last_name">Apellido*</label>
-          </td>
-          <td valign="top">
-            <input  type="text" name="last_name" maxlength="50" size="20">
-          </td>
-        </tr>
-        <tr>
-          <td valign="top">
-            <label for="email">Email*</label>
-          </td>
-          <td valign="top">
-            <input  type="text" name="email" maxlength="80" size="20">
-          </td>
-        </tr>
-        <tr>
-          <td valign="top">
-            <label for="telephone">Teléfono</label>
-          </td>
-          <td valign="top">
-            <input  type="text" name="telephone" maxlength="30" size="20">
-          </td>
-        </tr>
-        <tr>
-          <td valign="top">
-            <label for="comments">Comentarios *</label>
-          </td>
-          <td valign="top">
-            <textarea  name="comments" maxlength="1000" cols="20" rows="6"></textarea>
-          </td>
-        </tr>
-        <tr>
-          <td colspan="2" style="text-align:center">
-            <input type="submit" value="Enviar">
-          </td>
-        </tr>
-      </table>
-      <div class="g-recaptcha" data-sitekey="6LdH7XEUAAAAAP4xDZ8ySFl3bO1RLloCfSwIrBvx"></div>
-    </form>
-    <p><small>*Datos requeridos</small></p>
-          <!--<form name="sentMessage" id="contactForm" action="enviar_mail.php" novalidate>
-            <div class="control-group">
-              <div class="form-group floating-label-form-group controls">
-                <label>Nombre</label>
-                <input type="text" class="form-control" placeholder="Nombre completo" id="name" required data-validation-required-message="Por favor ingrese su nombre completo">
-                <p class="help-block text-danger"></p>
-              </div>
-            </div>
-            <div class="control-group">
-              <div class="form-group floating-label-form-group controls">
-                <label>Correo Electrónico</label>
-                <input type="email" class="form-control" placeholder="Correo Electrónico" id="email" required data-validation-required-message="Por favor ingrese un email válido">
-                <p class="help-block text-danger"></p>
-              </div>
-            </div>
-            <div class="control-group">
-              <div class="form-group col-xs-12 floating-label-form-group controls">
-                <label>Asunto</label>
-                <input type="tel" class="form-control" placeholder="Asunto" id="phone" required data-validation-required-message="Por favor Ingrese un asunto">
-                <p class="help-block text-danger"></p>
-              </div>
-            </div>
-            <div class="control-group">
-              <div class="form-group floating-label-form-group controls">
-                <label>Mensaje</label>
-                <textarea rows="5" class="form-control" placeholder="Mensaje" id="message" required data-validation-required-message="Por favor ingrese un mensaje"></textarea>
-                <p class="help-block text-danger"></p>
-              </div>
-            </div>
-            <br>
-            <div id="success"></div>
-            <div class="form-group">
-              <button type="submit" class="btn btn-primary btn-block" id="sendMessageButton">Enviar</button>
-            </div>
-          </form>-->
-        </div>
-        <div class="col-lg-6 col-md-6 col-sm-12 col-12">
-          <h5>Matriz<br></h5>
-          <p>Heroica Veracruz # 35 1<br>
-            Col. Centro CP. 92800<br>
-            Tuxpan, Veracruz</p>
-          <img src="img/mapapro_logos22-u16120.png" class="img-fluid">
-        </div>
-
-      </div>
-    </div>
+   
 
     <hr>
 
